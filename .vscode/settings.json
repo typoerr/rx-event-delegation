@@ -1,0 +1,14 @@
+{
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "javascript.validate.enable": true,
+  "files.exclude": {
+    "**/dist/**": false,
+    "**/*bundle.*/**": true,
+    "**/node_modules/**": true,
+    "**/.cache/**": true,
+    ".rts2*": true
+  },
+  // disable editor format for prettier
+  "typescript.format.enable": false,
+  "javascript.format.enable": false
+}

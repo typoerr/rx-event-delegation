@@ -1,0 +1,61 @@
+{
+  "name": "@typoerr/rx-event-delegation",
+  "description": "",
+  "version": "0.0.1",
+  "author": "typoerr",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "src",
+    "dist",
+    "README.md",
+    "LICENCE"
+  ],
+  "homepage": "https://github.com/typoerr/rx-event-delegation#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/typoerr/rx-event-delegation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/typoerr/rx-event-delegation/issues"
+  },
+  "dependencies": {
+    "@typoerr/event-delegation": "^0.1.18",
+    "rxjs": "^6.6.3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.1.0",
+    "@types/jsdom": "^16.2.5",
+    "@types/node": "^14.14.20",
+    "@types/sinon": "^9.0.10",
+    "@typoerr/eslint-config": "^0.0.38",
+    "ava": "^3.15.0",
+    "eslint": "^7.17.0",
+    "jsdom": "^16.4.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.36.1",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "sinon": "^9.2.3",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.1.3"
+  },
+  "scripts": {
+    "compile": "rollup -c",
+    "clean": "rimraf dist",
+    "lint": "eslint src/**/*.ts test/**/*.ts",
+    "type-check": "tsc --noEmit",
+    "npm-publish": "yarn publish",
+    "git:push": "git push",
+    "git:push:tag": "git push --tag",
+    "release": "run-s lint test compile npm-publish clean git:**",
+    "test": "ava --config ./ava.config.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
