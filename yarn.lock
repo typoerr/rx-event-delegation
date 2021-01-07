@@ -260,10 +260,10 @@
     eslint-config-prettier "^7.1.0"
     eslint-plugin-prettier "^3.3.1"
 
-"@typoerr/event-delegation@^0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@typoerr/event-delegation/-/event-delegation-0.1.18.tgz#b41877fe6a29aba320f4c0fa05b906e25d4052ed"
-  integrity sha512-mwOqx7ET1GIylHXo83mmKQqIMbKnH9GPp6ikyH5mSDOKq5LfRTI/+73uyNzIl1BoWpTd9+vliygFVkbdYLoD2A==
+"@typoerr/event-delegation@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@typoerr/event-delegation/-/event-delegation-0.2.0.tgz#0bbc57f67c543b71393bb976d435ee888e32eb0d"
+  integrity sha512-t3408u2pemAXcV4k37xOQ0ViFN372/5Pfk7XTMTPoLGpyZNVe473NENvCxUMA3F9GGiluGY3gM1zan04m7/CGw==
 
 abab@^2.0.3:
   version "2.0.5"

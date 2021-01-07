@@ -22,7 +22,7 @@
     "url": "https://github.com/typoerr/rx-event-delegation/issues"
   },
   "dependencies": {
-    "@typoerr/event-delegation": "^0.1.18",
+    "@typoerr/event-delegation": "^0.2.0",
     "rxjs": "^6.6.3"
   },
   "devDependencies": {
