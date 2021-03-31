@@ -1,7 +1,7 @@
 {
   "name": "@typoerr/rx-event-delegation",
   "description": "",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "typoerr",
   "license": "MIT",
   "main": "dist/index.js",
