@@ -1,5 +1,6 @@
 import ava, { TestInterface } from 'ava'
 import { delegate } from '../src/index'
+import { firstValueFrom } from 'rxjs'
 import { tap, map, take, toArray } from 'rxjs/operators'
 import * as sinon from 'sinon'
 import { JSDOM } from 'jsdom'
@@ -34,7 +35,7 @@ test.cb('delegate', (t) => {
     toArray(),
   )
 
-  test$.toPromise().then((arr) => {
+  firstValueFrom(test$).then((arr) => {
     t.is(mock.callCount, 1)
     t.is(arr.length, 1)
     t.end()
